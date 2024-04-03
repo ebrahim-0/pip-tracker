@@ -156,6 +156,7 @@ function Capture({setMode, goBack}: { setMode: (mode: number) => void, goBack: (
         // }
 
         if (typeof gtag !== 'undefined') {
+            console.log('gtag',gtag)
             gtag('event', 'FPS', {
                 event_label: Math.floor(avg || 0).toFixed(2),
                 event_category: 'Capture',
